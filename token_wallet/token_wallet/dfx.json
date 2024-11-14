@@ -1,0 +1,17 @@
+{
+  "canisters": {
+    "token_wallet_backend": {
+      "type": "custom",
+      "candid": "src/token_wallet_backend/token_wallet_backend.did",
+      "wasm": "target/wasm32-unknown-unknown/release/token_wallet_backend.wasm",
+      "build": "cargo build --target wasm32-unknown-unknown --release"
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
